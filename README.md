@@ -12,6 +12,23 @@ Vessel Tracker is a GraphQL API that facilitates following,
 *   A Database store to capture all arrival logs
 > Any kind of database system can be used but for simplicity of the test SQLite is used
 
+## Architecture
+
+The system is made up of,
+    
+    - A Mobile Application that end users will use to track arrival logs
+
+    - A GraphQL API with one mutation and two queries
+
+    - An existing API that provides arrival log every time a vessel arrives in a port somewhere in the world
+
+    - A Data store that will store all ship arrivals
+
+There are several ways in which a system architecture can be produced. [C4 model][c4Model] is used here to produce a component Level architecture diagram below,
+
+![Vessel Tracker Architecture][Vessel-Tracker]
+![Vessel Tracker Architecture Key][Vessel-Tracker-Key]
+
 ## GraphQL API
 
 Vessel Tracker is a GraphQL API built using [Apollo Data Graph Platform][Apollo]
@@ -75,15 +92,6 @@ There is one example for each mutation and query provided below but you can add 
         }
     }
     ```
-
-
-## Architecture
-
-There are several ways in which a system architecture can be produced. [C4 model][c4Model] is used here to produce a Component Level architecture diagram that highlights the GraphQL API produced
-
-![Vessel Tracker Architecture][Vessel-Tracker]
-![Vessel Tracker Architecture Key][Vessel-Tracker-Key]
-
 
 ## Next steps
 
