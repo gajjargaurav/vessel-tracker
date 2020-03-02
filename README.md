@@ -20,9 +20,34 @@ There are several ways in which a system architecture can be produced. C4 model 
 ![Vessel Tracker Architecture Key][Vessel-Tracker-Key]
 
 
-## The solution (TO BE IMPLEMENTED)
+## GraphQL API
 
-Vessel Tracker is a GraphQL API built using [Apollo Data Graph Platform][Apollo] . It also uses SQLite as a temporary data store. 
+Vessel Tracker is a GraphQL API built using [Apollo Data Graph Platform][Apollo]
+
+It uses SQLite as a temporary data store.
+
+### Installation
+```bash
+npm install
+```
+
+### Running the API
+Once you've installed modules just run following command
+
+```bash
+npm start
+```
+
+Running above command will setup an Apollo playground on http://localhost:4000/
+just simply paste that URL and play with the Apollo playground to explore the API!
+
+## Next steps
+
+* Add unit tests - haven't added any tests yet please do that asap!!
+* Sort by date is hard coded and can be moved out to query so data can be fetched using different order too
+* Add linting and other boilerplate code
+* Setup CI
+
 
 [Vessel-Tracker]: ./Vessel-Tracker-ComponentView.png "Vessel-Tracker"
 [Vessel-Tracker-Key]: ./Vessel-Tracker-ComponentView-key.png "Vessel-Tracker-Key"
