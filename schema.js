@@ -10,14 +10,14 @@ type Mutation {
 }
 input VesselArrival {
     vesselName: String,
-    arrivedOn: String,
+    arrivedOn: DateTime,
     portName: String,
     captainName: String
 }
 
 type ArrivalLog {
     vesselName: String,
-    arrivedOn: String,
+    arrivedOn: DateTime,
     portName: String,
     captainName: String
 }

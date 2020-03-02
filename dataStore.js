@@ -20,7 +20,6 @@ class DataStore extends DataSource {
         return res && res.length ? res : [];
     }
     async logVesselArrival({ vesselName, arrivedOn, portName, captainName }) {
-        console.log(vesselName, arrivedOn, portName, captainName);
         const res = await this.store.vesselLogs.findOrCreate({
             where: { vesselName, arrivedOn, portName, captainName },
         });

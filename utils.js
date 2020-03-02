@@ -12,7 +12,7 @@ module.exports.createStore = () => {
         primaryKey: true,
         autoIncrement: true,
       },
-      arrivedOn: Sequelize.STRING,
+      arrivedOn: Sequelize.DATE,
       vesselName: Sequelize.STRING, // NOTE: We can have a Vessel Model defined an associate that here
       captainName: Sequelize.STRING, 
       portName: Sequelize.STRING
