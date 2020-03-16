@@ -98,12 +98,13 @@ There is one example for each mutation and query provided below but you can add 
 This is just a start and a lot can be done. However following are few things on our radar
 
 ### Must have
-* Add unit tests - haven't added any tests yet please do that asap!!
+* ~~Add unit tests~~
 * Sort by date is hard coded and can be moved out to query so data can be fetched using different order too
 
 ### Should have
 * Add linting and other boilerplate code
-* Setup CI
+* Setup CI 
+    * ~~Add docker container~~
 
 ### Nice to have
 * Add Apollo Client & add arrival log subscription so updates can be received by Mobile App automatically
