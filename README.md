@@ -33,13 +33,15 @@ There are several ways in which a system architecture can be produced. [C4 model
 
 Vessel Tracker is a GraphQL API built using [Apollo Data Graph Platform][Apollo]
 
+
 ### Installation
+Before we can run the API we need to install it's dependencies do that using following command
 ```bash
     npm install
 ```
 
 ### Running the API
-Once you've installed modules just run following command
+Once you've installed modules just run following command to start the API
 
 ```bash
     npm start
